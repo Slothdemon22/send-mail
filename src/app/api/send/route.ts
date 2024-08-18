@@ -7,10 +7,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req: NextRequest) {
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['ahmadhasnat490@gmail.com'],
+      from: 'Shaperzz <no-reply@tradenexusonline.com>',
+      to: ['www.basilslothdemon@gmail.com'],
       subject: 'Hello basil kake!',
-      react: EmailTemplate({ firstName: 'noob this is testing' }),
+      react: EmailTemplate({ firstName: 'Hello tarnished One' }),
     });
 
     if (error) {
